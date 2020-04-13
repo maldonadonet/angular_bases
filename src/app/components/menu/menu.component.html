@@ -1,0 +1,4 @@
+<ul class="list-group">
+  <!-- eliminamos y agregamos routerLink para los enlaces y evitar recargar la Página -->
+  <a *ngFor="let ruta of rutas" [routerLink]="ruta.path" class="list-group-item">{{ ruta.name }}</a>
+</ul>
